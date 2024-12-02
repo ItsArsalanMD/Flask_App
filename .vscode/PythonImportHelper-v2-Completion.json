@@ -1,0 +1,355 @@
+[
+    {
+        "label": "Flask",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "jsonify",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "Flask",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "request",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "jsonify",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "Flask",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "render_template",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "request",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "redirect",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "jsonify",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "mysql.connector",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "mysql.connector",
+        "description": "mysql.connector",
+        "detail": "mysql.connector",
+        "documentation": {}
+    },
+    {
+        "label": "Error",
+        "importPath": "mysql.connector",
+        "description": "mysql.connector",
+        "isExtraImport": true,
+        "detail": "mysql.connector",
+        "documentation": {}
+    },
+    {
+        "label": "db",
+        "importPath": "models",
+        "description": "models",
+        "isExtraImport": true,
+        "detail": "models",
+        "documentation": {}
+    },
+    {
+        "label": "Item",
+        "importPath": "models",
+        "description": "models",
+        "isExtraImport": true,
+        "detail": "models",
+        "documentation": {}
+    },
+    {
+        "label": "Config",
+        "importPath": "config",
+        "description": "config",
+        "isExtraImport": true,
+        "detail": "config",
+        "documentation": {}
+    },
+    {
+        "label": "Migrate",
+        "importPath": "flask_migrate",
+        "description": "flask_migrate",
+        "isExtraImport": true,
+        "detail": "flask_migrate",
+        "documentation": {}
+    },
+    {
+        "label": "SQLAlchemy",
+        "importPath": "flask_sqlalchemy",
+        "description": "flask_sqlalchemy",
+        "isExtraImport": true,
+        "detail": "flask_sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "get_users",
+        "kind": 2,
+        "importPath": "GET_Withour_DB.app",
+        "description": "GET_Withour_DB.app",
+        "peekOfCode": "def get_users():\n    \"\"\"Return the list of all users in JSON format.\"\"\"\n    return jsonify({\"users\": users})\n@app.route('/users/<int:user_id>', methods=['GET'])\ndef get_user_by_id(user_id):\n    \"\"\"Return user data for a specific user ID.\"\"\"\n    user = next((user for user in users if user[\"id\"] == user_id), None)\n    if user:\n        return jsonify(user)\n    return jsonify({\"error\": \"User not found\"}), 404",
+        "detail": "GET_Withour_DB.app",
+        "documentation": {}
+    },
+    {
+        "label": "get_user_by_id",
+        "kind": 2,
+        "importPath": "GET_Withour_DB.app",
+        "description": "GET_Withour_DB.app",
+        "peekOfCode": "def get_user_by_id(user_id):\n    \"\"\"Return user data for a specific user ID.\"\"\"\n    user = next((user for user in users if user[\"id\"] == user_id), None)\n    if user:\n        return jsonify(user)\n    return jsonify({\"error\": \"User not found\"}), 404\nif __name__ == '__main__':\n    app.run(host=\"0.0.0.0\", port=80, debug=True)",
+        "detail": "GET_Withour_DB.app",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "kind": 5,
+        "importPath": "GET_Withour_DB.app",
+        "description": "GET_Withour_DB.app",
+        "peekOfCode": "app = Flask(__name__)\n# Sample user data\nusers = [\n    {\"id\": 1, \"name\": \"John Doe\", \"email\": \"john@example.com\"},\n    {\"id\": 2, \"name\": \"Jane Smith\", \"email\": \"jane@example.com\"},\n    {\"id\": 3, \"name\": \"Alice Brown\", \"email\": \"alice@example.com\"}\n]\n@app.route('/users', methods=['GET'])\ndef get_users():\n    \"\"\"Return the list of all users in JSON format.\"\"\"",
+        "detail": "GET_Withour_DB.app",
+        "documentation": {}
+    },
+    {
+        "label": "users",
+        "kind": 5,
+        "importPath": "GET_Withour_DB.app",
+        "description": "GET_Withour_DB.app",
+        "peekOfCode": "users = [\n    {\"id\": 1, \"name\": \"John Doe\", \"email\": \"john@example.com\"},\n    {\"id\": 2, \"name\": \"Jane Smith\", \"email\": \"jane@example.com\"},\n    {\"id\": 3, \"name\": \"Alice Brown\", \"email\": \"alice@example.com\"}\n]\n@app.route('/users', methods=['GET'])\ndef get_users():\n    \"\"\"Return the list of all users in JSON format.\"\"\"\n    return jsonify({\"users\": users})\n@app.route('/users/<int:user_id>', methods=['GET'])",
+        "detail": "GET_Withour_DB.app",
+        "documentation": {}
+    },
+    {
+        "label": "connect_to_db",
+        "kind": 2,
+        "importPath": "POST_PUT_DELETE.app",
+        "description": "POST_PUT_DELETE.app",
+        "peekOfCode": "def connect_to_db():\n    try:\n        connection = mysql.connector.connect(**db_config)\n        if connection.is_connected():\n            return connection\n    except Error as e:\n        print(f\"Error while connecting to MySQL: {e}\")\n    return None\n# POST: Add a new record\n@app.route('/users', methods=['POST'])",
+        "detail": "POST_PUT_DELETE.app",
+        "documentation": {}
+    },
+    {
+        "label": "add_record",
+        "kind": 2,
+        "importPath": "POST_PUT_DELETE.app",
+        "description": "POST_PUT_DELETE.app",
+        "peekOfCode": "def add_record():\n    data = request.json\n    name = data.get('name')\n    age = data.get('age')\n    if not name or not age:\n        return jsonify({\"error\": \"Missing name or age\"}), 400\n    connection = connect_to_db()\n    if connection:\n        try:\n            cursor = connection.cursor()",
+        "detail": "POST_PUT_DELETE.app",
+        "documentation": {}
+    },
+    {
+        "label": "update_record",
+        "kind": 2,
+        "importPath": "POST_PUT_DELETE.app",
+        "description": "POST_PUT_DELETE.app",
+        "peekOfCode": "def update_record(id):\n    data = request.json\n    name = data.get('name')\n    age = data.get('age')\n    if not name and not age:\n        return jsonify({\"error\": \"Nothing to update\"}), 400\n    connection = connect_to_db()\n    if connection:\n        try:\n            cursor = connection.cursor()",
+        "detail": "POST_PUT_DELETE.app",
+        "documentation": {}
+    },
+    {
+        "label": "delete_record",
+        "kind": 2,
+        "importPath": "POST_PUT_DELETE.app",
+        "description": "POST_PUT_DELETE.app",
+        "peekOfCode": "def delete_record(id):\n    connection = connect_to_db()\n    if connection:\n        try:\n            cursor = connection.cursor()\n            query = \"DELETE FROM users WHERE id = %s\"\n            cursor.execute(query, (id,))\n            connection.commit()\n            if cursor.rowcount == 0:\n                return jsonify({\"error\": \"Record not found\"}), 404",
+        "detail": "POST_PUT_DELETE.app",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "kind": 5,
+        "importPath": "POST_PUT_DELETE.app",
+        "description": "POST_PUT_DELETE.app",
+        "peekOfCode": "app = Flask(__name__)\n# MySQL Configuration\ndb_config = {\n    'host': 'localhost',\n    'user': 'root',\n    'password': 'root@123',\n    'database': 'test'\n}\n# Test MySQL Connection\ndef connect_to_db():",
+        "detail": "POST_PUT_DELETE.app",
+        "documentation": {}
+    },
+    {
+        "label": "db_config",
+        "kind": 5,
+        "importPath": "POST_PUT_DELETE.app",
+        "description": "POST_PUT_DELETE.app",
+        "peekOfCode": "db_config = {\n    'host': 'localhost',\n    'user': 'root',\n    'password': 'root@123',\n    'database': 'test'\n}\n# Test MySQL Connection\ndef connect_to_db():\n    try:\n        connection = mysql.connector.connect(**db_config)",
+        "detail": "POST_PUT_DELETE.app",
+        "documentation": {}
+    },
+    {
+        "label": "get_items",
+        "kind": 2,
+        "importPath": "UI_CRUD.app",
+        "description": "UI_CRUD.app",
+        "peekOfCode": "def get_items():\n    items = Item.query.all()\n    return jsonify([{'id': item.id, 'name': item.name, 'description': item.description} for item in items])\n@app.route('/api/items', methods=['POST'])\ndef add_item():\n    data = request.json\n    new_item = Item(name=data['name'], description=data['description'])\n    db.session.add(new_item)\n    db.session.commit()\n    return jsonify({'message': 'Item added successfully!'}), 201",
+        "detail": "UI_CRUD.app",
+        "documentation": {}
+    },
+    {
+        "label": "add_item",
+        "kind": 2,
+        "importPath": "UI_CRUD.app",
+        "description": "UI_CRUD.app",
+        "peekOfCode": "def add_item():\n    data = request.json\n    new_item = Item(name=data['name'], description=data['description'])\n    db.session.add(new_item)\n    db.session.commit()\n    return jsonify({'message': 'Item added successfully!'}), 201\n@app.route('/api/edit/<int:id>', methods=['GET', 'POST'])\ndef edit_item(id):\n    item = Item.query.get_or_404(id)\n    if request.method == 'POST':",
+        "detail": "UI_CRUD.app",
+        "documentation": {}
+    },
+    {
+        "label": "edit_item",
+        "kind": 2,
+        "importPath": "UI_CRUD.app",
+        "description": "UI_CRUD.app",
+        "peekOfCode": "def edit_item(id):\n    item = Item.query.get_or_404(id)\n    if request.method == 'POST':\n        item.name = request.form['name']\n        item.description = request.form['description']\n        db.session.commit()\n        return redirect('/')\n    return render_template('edit_item.html', item=item)\n@app.route('/api/items/<int:id>', methods=['PUT'])\ndef update_item(id):",
+        "detail": "UI_CRUD.app",
+        "documentation": {}
+    },
+    {
+        "label": "update_item",
+        "kind": 2,
+        "importPath": "UI_CRUD.app",
+        "description": "UI_CRUD.app",
+        "peekOfCode": "def update_item(id):\n    data = request.json\n    item = Item.query.get_or_404(id)\n    item.name = data['name']\n    item.description = data['description']\n    db.session.commit()\n    return jsonify({'message': 'Item updated successfully!'})\n@app.route('/api/delete_item/<int:id>', methods=['DELETE'])\ndef delete_item(id):\n    item = Item.query.get_or_404(id)",
+        "detail": "UI_CRUD.app",
+        "documentation": {}
+    },
+    {
+        "label": "delete_item",
+        "kind": 2,
+        "importPath": "UI_CRUD.app",
+        "description": "UI_CRUD.app",
+        "peekOfCode": "def delete_item(id):\n    item = Item.query.get_or_404(id)\n    db.session.delete(item)\n    db.session.commit()\n    return jsonify({'message': 'Item deleted successfully!'})\n@app.route('/api/delete/<int:id>', methods=['GET'])\ndef delete_confirmation(id):\n    item = Item.query.get_or_404(id)\n    return render_template('delete.html', item=item)\n# UI Routes",
+        "detail": "UI_CRUD.app",
+        "documentation": {}
+    },
+    {
+        "label": "delete_confirmation",
+        "kind": 2,
+        "importPath": "UI_CRUD.app",
+        "description": "UI_CRUD.app",
+        "peekOfCode": "def delete_confirmation(id):\n    item = Item.query.get_or_404(id)\n    return render_template('delete.html', item=item)\n# UI Routes\n@app.route('/')\ndef index():\n    items = Item.query.all()\n    return render_template('index.html', items=items)\n@app.route('/add', methods=['POST'])\ndef add_item_ui():",
+        "detail": "UI_CRUD.app",
+        "documentation": {}
+    },
+    {
+        "label": "index",
+        "kind": 2,
+        "importPath": "UI_CRUD.app",
+        "description": "UI_CRUD.app",
+        "peekOfCode": "def index():\n    items = Item.query.all()\n    return render_template('index.html', items=items)\n@app.route('/add', methods=['POST'])\ndef add_item_ui():\n    name = request.form['name']\n    description = request.form['description']\n    new_item = Item(name=name, description=description)\n    db.session.add(new_item)\n    db.session.commit()",
+        "detail": "UI_CRUD.app",
+        "documentation": {}
+    },
+    {
+        "label": "add_item_ui",
+        "kind": 2,
+        "importPath": "UI_CRUD.app",
+        "description": "UI_CRUD.app",
+        "peekOfCode": "def add_item_ui():\n    name = request.form['name']\n    description = request.form['description']\n    new_item = Item(name=name, description=description)\n    db.session.add(new_item)\n    db.session.commit()\n    return redirect('/')\n@app.route('/delete/<int:id>')\ndef delete_item_ui(id):\n    item = Item.query.get_or_404(id)",
+        "detail": "UI_CRUD.app",
+        "documentation": {}
+    },
+    {
+        "label": "delete_item_ui",
+        "kind": 2,
+        "importPath": "UI_CRUD.app",
+        "description": "UI_CRUD.app",
+        "peekOfCode": "def delete_item_ui(id):\n    item = Item.query.get_or_404(id)\n    db.session.delete(item)\n    db.session.commit()\n    return redirect('/')\nif __name__ == '__main__':\n    with app.app_context():\n        db.create_all()\n    app.run(debug=True, host='0.0.0.0')",
+        "detail": "UI_CRUD.app",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "kind": 5,
+        "importPath": "UI_CRUD.app",
+        "description": "UI_CRUD.app",
+        "peekOfCode": "app = Flask(__name__)\napp.config.from_object(Config)\ndb.init_app(app)\n# Initialize Flask-Migrate\nmigrate = Migrate(app, db)\n# API Routes\n@app.route('/api/items', methods=['GET'])\ndef get_items():\n    items = Item.query.all()\n    return jsonify([{'id': item.id, 'name': item.name, 'description': item.description} for item in items])",
+        "detail": "UI_CRUD.app",
+        "documentation": {}
+    },
+    {
+        "label": "migrate",
+        "kind": 5,
+        "importPath": "UI_CRUD.app",
+        "description": "UI_CRUD.app",
+        "peekOfCode": "migrate = Migrate(app, db)\n# API Routes\n@app.route('/api/items', methods=['GET'])\ndef get_items():\n    items = Item.query.all()\n    return jsonify([{'id': item.id, 'name': item.name, 'description': item.description} for item in items])\n@app.route('/api/items', methods=['POST'])\ndef add_item():\n    data = request.json\n    new_item = Item(name=data['name'], description=data['description'])",
+        "detail": "UI_CRUD.app",
+        "documentation": {}
+    },
+    {
+        "label": "Config",
+        "kind": 6,
+        "importPath": "UI_CRUD.config",
+        "description": "UI_CRUD.config",
+        "peekOfCode": "class Config:\n    SECRET_KEY = '2b77ff6e5d9ebf0c40c914d6be3423af732c7eaaf85e1a32'\n    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://postgres:123@localhost/crud'\n    SQLALCHEMY_TRACK_MODIFICATIONS = False",
+        "detail": "UI_CRUD.config",
+        "documentation": {}
+    },
+    {
+        "label": "Item",
+        "kind": 6,
+        "importPath": "UI_CRUD.models",
+        "description": "UI_CRUD.models",
+        "peekOfCode": "class Item(db.Model):\n    __tablename__ = 'items'\n    id = db.Column(db.Integer, primary_key=True)\n    name = db.Column(db.String(80), nullable=False)  # Compatible with PostgreSQL\n    description = db.Column(db.Text, nullable=True)  # Compatible with PostgreSQL",
+        "detail": "UI_CRUD.models",
+        "documentation": {}
+    },
+    {
+        "label": "db",
+        "kind": 5,
+        "importPath": "UI_CRUD.models",
+        "description": "UI_CRUD.models",
+        "peekOfCode": "db = SQLAlchemy()\nclass Item(db.Model):\n    __tablename__ = 'items'\n    id = db.Column(db.Integer, primary_key=True)\n    name = db.Column(db.String(80), nullable=False)  # Compatible with PostgreSQL\n    description = db.Column(db.Text, nullable=True)  # Compatible with PostgreSQL",
+        "detail": "UI_CRUD.models",
+        "documentation": {}
+    }
+]
