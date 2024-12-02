@@ -1,3 +1,6 @@
 flask
 flask-mysql-connector
 flask_sqlalchemy
+pymysql
+psycopg2-binary
+flask-migrate
